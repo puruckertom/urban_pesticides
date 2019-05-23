@@ -54,7 +54,7 @@ False,True,False,False,False,1
 1
 *** Record 15
 *** #,thk, Del, Dsp,   bd,  W0,    FC,    WP,    oc, snd, cly,  tmp 
-1, 30, 100, 0.0, 1.9, 0.28, 0.28, 0.28, 0, , , ,
+1, 50, 100, 0.0, 1.9, 0.28, 0.28, 0.28, 0, , , ,
 *** Record 16, New Runoff Extraction Parameters: rDepth, rDecline, Bypass
 2.0,1.55,0.266,
 *** Record 17: New Erosion Extraction Parameters: eDepth, eDecline, eEfficiency

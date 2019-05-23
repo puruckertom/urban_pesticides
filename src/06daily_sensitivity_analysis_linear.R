@@ -6,6 +6,7 @@ ndays <- length(timearray)
 dim(outputdf)
 outputdf[1:365,,1]#check output
 ro <- outputdf[,4,1:Nsims]
+sum(is.nan(pestinro))
 pesthrooutput <- outputdf[,6,1:Nsims]#6pesticide concentration in runoff, 7 pesticide concentration in erosion,8pesticide concentration in pore water
 pestinro<-ro*pesthrooutput*1e+9
 #write.csv(pestinro, file = paste(pwcdir, "io/pestinro.csv", sep = ""))
@@ -16,7 +17,7 @@ nvars <- length(inputdata)#number of input variables
 
 #create partial correlation coefficients array for output
 tarray_pccout<- array(data=NA, c(ndays,nvars))#create time series input array
-
+i=1
 #partial correlation coefficients
 for (i in 1:ndays){  #break
   out_sim<- pestinro[i,1:Nsims]
@@ -29,7 +30,7 @@ for (i in 1:ndays){  #break
 dim(tarray_pccout)
 save(tarray_pccout,file = paste(pwcdir,"io/tarray_pccout.RData", sep = ""))
 write.csv(tarray_pccout, file = paste(pwcdir, "io/tarray_pccout.csv", sep = ""))
-plot(temp_pcc)
+#plot(temp_pcc)
 #####################################################################################################################
 #############################  PWC ######################################
 # ndays <- length(timearray)

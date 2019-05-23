@@ -39,14 +39,14 @@ if(Sys.info()[4]=="DZ2626UTPURUCKE"){
 }
 #Sumathy's window
 if(Sys.info()[4]=="DZ2626USSINNATH"){
-  pwcdir <- "C:/Users/SSinnath/Research/Urban_Pesticide_Modeling/PWC/urban_pesticide/"
+  pwcdir <- "C:/git/urban_pesticides/"
   # pwc,przm file (without directory, the file needs to be in vpdir_exe above)
   pwc_filename <- "urban.PWC"
   przm_filename <- "PRZM5.inp"
 }
 #Sumathy's desktop
 if(Sys.info()[4]=="DESKTOP-7UFGA86"){
-  pwcdir <- "C:/Users/Sumathy/sinnathamby_pwc/"
+  pwcdir <- "C:/Users/Sumathy/urban_pesticides/"
   # pwc,przm file (without directory, the file needs to be in vpdir_exe above)
   pwc_filename <- "urban.PWC"
   przm_filename <- "PRZM5.inp"
@@ -81,7 +81,7 @@ vvwm_binary<- "VVWM.exe"
 vvwmdir_executable <- paste(vvwmdir_exe, vvwm_binary, sep="")
 #number of simulations 
 
-Nsims <- 50
+Nsims <- 5
 
 #weather file
 #can be .dvf or .wea

@@ -9,7 +9,7 @@ przmsedoutput <- (outputdf[,7,1:Nsims]*1000000)
 head (przmsedoutput)
 przmmax_h20<-apply(przmh2output, 2, function(x) max(x, na.rm = TRUE))
 przmmax_sed<-apply(przmsedoutput, 2, function(x) max(x, na.rm = TRUE))
-
+summary(przmmax_sed)
 
 # pwch2output <- (pwcoutdf[,2,1:Nsims]*1000000)#in ug/ml
 # pwcpeak<- (pwcoutdf[,4,1:Nsims]*1000000)#in ug/ml
