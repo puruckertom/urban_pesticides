@@ -9,7 +9,7 @@ colnames(outputdf) <- c("YYYY","MM","DD","RUNF0","ESLS0","RFLX1","EFLX1","DCON1"
 colnames(outputdf)
 
 Npcc <- Nsims
-Npcc <- 50
+Npcc <- 5000
 
 io_df <- matrix(NA,Npcc,37)
 for(i in 1:Npcc){
