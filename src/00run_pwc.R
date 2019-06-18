@@ -26,13 +26,17 @@ version
 
 
 #set some default directories based on machine location
+#Tom's epa linux
+if(Sys.info()[4]=="d2626ut7920d.rtpnc.epa.gov"){
+  pwcdir <- "~/git/urban_pesticides/"
+}
 #Tom's mac air
 if(Sys.info()[4]=="stp-air"){
-  pwcdir <- "~/git/sinnathamby_pwc/"
+  pwcdir <- "~/git/urban_pesticides/"
 }
 #Tom's epa window
 if(Sys.info()[4]=="DZ2626UTPURUCKE"){
-  pwcdir <- "d:/git/sinnathamby_pwc/"
+  pwcdir <- "d:/git/urban_pesticides/"
   # pwc,przm (without directory, the file needs to be in vpdir_exe above)
   pwc_filename <- "urban.PWC"
   przm_filename <- "PRZM5.inp"
